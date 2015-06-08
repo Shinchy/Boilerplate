@@ -1,9 +1,0 @@
-@mixin FuturaFont( $size, $weight: 400, $color: #000, $letterSpacing: 1px ) { 
-  font-family: 'FuturaPT', Tahoma, sans-serif; font-weight: $weight; color: $color; font-size: $size; letter-spacing: $letterSpacing; 
-}
-@mixin TahomaFont( $size, $weight: normal, $color: #000, $letterSpacing: 0 ) { 
-  font-family: Tahoma, Arial, sans-serif; font-weight: $weight; color: $color; font-size: $size; letter-spacing: $letterSpacing;
-}
-@mixin GeorgiaFont( $size, $weight: normal, $color: #000, $letterSpacing: 0 ) {
-  font-family: Georgia, Times, serif; font-weight: $weight; color: $color; font-size: $size; letter-spacing: $letterSpacing;
-}
