@@ -1,7 +1,6 @@
-# ${1:Project Name}
+# My Boilerplate
 
-===
-	Framework Used for My Basic Front End Applications
+	Framework Used for My Basic Front End Applications. It's just a basic setup that I like to use.
 
 ## Dependancies
 
