@@ -1,13 +1,15 @@
+# ${1:Project Name}
+
 ===
 	Framework Used for My Basic Front End Applications
 
-Dependancies
+## Dependancies
 
 	The framework makes use of Gulp.js to compile all the scripts and sass
 
 
 
-Setup guide:
+## Setup guide:
 
 	get git repository from the following location
 	--
