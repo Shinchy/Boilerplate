@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+// ES6 Import Features
+
+=======
+>>>>>>> 5346240c8f625a342d584deb97a1db74c389e478
 (function($){
 
     var _usingMobile = false;
@@ -5,6 +10,13 @@
     var _usingIPhone = false;
     var _usingTouch  = false;
 
+<<<<<<< HEAD
+
+    // Universal choices
+    $(window).load( initComHomepage );
+
+    // Init This Page/
+=======
     // Universal choices
     var _player, _defaultVideo, _currentSlide, _videoOverlay, _previousPath = 'a-a', _pathPos = 'a';
 
@@ -25,13 +37,19 @@
     $(window).load( initComHomepage );
 
     // Init This Page
+>>>>>>> 5346240c8f625a342d584deb97a1db74c389e478
     function initComHomepage(e)
     {
         // prevent the page jumping    
         if (screen.width < 640 || document.documentElement.clientWidth < 640) { _usingMobile = true; _usingTouch = true; }
+<<<<<<< HEAD
+        if (navigator.userAgent.match(/iPad/i) !== null) { _usingTablet = true; _usingTouch = true; }
+        if (navigator.userAgent.indexOf('iPhone') || navigator.userAgent.indexOf('iPod')) { _usingIPhone = true; _usingTouch = true; }
+=======
         if (navigator.userAgent.match(/iPad/i) != null) { _usingTablet = true; _usingTouch = true; }
         if (navigator.userAgent.indexOf('iPhone') || navigator.userAgent.indexOf('iPod')) { _usingIPhone = true; _usingTouch = true }
 
+>>>>>>> 5346240c8f625a342d584deb97a1db74c389e478
 
         if( !_usingMobile ) {
 
@@ -39,6 +57,21 @@
             
         } else {
 
+<<<<<<< HEAD
+            // If using a mobile platform ... 
+            $('a[href^=#DROPDOWN]').click(function () {
+                $('.dropdown').click(function(){
+                    var container = $(this).closest('section'), menu = container.find( 'nav.section-nav' );
+                    if( $(this).hasClass('open') ) {
+                        $(this).removeClass('open'); menu.slideUp( 500 );
+                    } else {
+                        $(this).addClass('open'); menu.slideDown( 500 );        
+                    }
+                });
+                return false;
+            });
+            $('a[href^=#REFRESH]').click(function(e){
+=======
 
             var _videoFolderURL = 'http://commercial.asos.com/revlonvideo/video/mobile/';
 
@@ -48,10 +81,20 @@
                 return false;
             });
             $('.restart').click(function(e){
+>>>>>>> 5346240c8f625a342d584deb97a1db74c389e478
                 window.location.reload();
             });
 
 
+<<<<<<< HEAD
+
+        }
+
+        // Example of a Gallery 
+        //
+        //    $('div.slider-gallery').GalleryAS({ mobile: _usingMobile });
+        //
+=======
             $('section.product-area article.look-1 aside.left').before( $('section.product-area article.look-1 aside.right') );
             $('section.product-area article.look-2 aside.left').before( $('section.product-area article.look-2 aside.right') );
 
@@ -87,6 +130,7 @@
 
         // Restart the application
         $('#creative .restart').click( restartApp );
+>>>>>>> 5346240c8f625a342d584deb97a1db74c389e478
 
         // Content accross both desktop and mobile
         $('a[href^=#compform]').click( openCompetition );
@@ -102,6 +146,21 @@
         $('#creative a[href^=#]').click(function(e) { e.preventDefault(); });
     }
 
+<<<<<<< HEAD
+    // Call the tracking link
+    function callTracking( $trackCall )
+    {
+        $trackCall = false || $trackCall;
+        switch( $trackCall ) {
+            //
+        }
+
+        // trigger the tracking event
+        // $(window).trigger("analytics.ctaClick",["HOSTELWORLD|WOMENS|"+newCall]);
+    } 
+
+
+=======
 
     // The basic video API
     function playVideo($event) {
@@ -293,6 +352,7 @@
         if( !$direction ) scrollToSection( null, '#creative section.product-area' );
     }
 
+>>>>>>> 5346240c8f625a342d584deb97a1db74c389e478
     // Scroll to specific area
     function scrollToSection(e, $element)
     {
@@ -317,6 +377,11 @@
         $('.comp-form').fadeOut(400);
     }
 
+<<<<<<< HEAD
+
+// End of closure
+})(jQuery);
+=======
     // open the mobile menus
     function dropdownMobileMenu(e)
     {
@@ -605,3 +670,4 @@
     }
 })(jQuery);
 
+>>>>>>> 5346240c8f625a342d584deb97a1db74c389e478

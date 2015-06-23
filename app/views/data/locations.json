@@ -1,0 +1,26 @@
+{
+	"locations" : [
+
+		{
+			"name": "Berlin",
+			"sub" : "Long Night of Museums",
+			"subdate" : "Saturday 29th August",
+			"info" : "For one night only each year, the museums and cultural hotspots of Berlin will open their doors to the public after dark. With a full schedule of live art, electric performances and epic concerts across the city, Friday 29 August is the day that y’all need to be in Germany’s über-cool capital.",
+			"images" : "locations/Berlin",
+			"gallerylength" : 3,
+			"hosteltitle" : "Circus Hostel",
+			"hostelinfo" : "Situated right in the heart of Berlin, the quirky Circus Hostel makes an awesome base. Over two floors lies a café, bar and lounge with a loan-out of iPads and laptops (to secure those rollover likes on all your filter-happy Insta snaps, obv). Oh, and did we mention they have their own microbrewery? Deal, sweetened.",
+			"commodity" : [ "wi-fi", "bike", "bar" ],
+			"hostellink" : "#",
+			"staygallerylength" : 9,
+			"packinfo" : "Lorem ipsum Dolor anim laborum id labore aliquip occaecat ea consectetur Ut do proident Ut nostrud anim elit cillum culpa cillum ea qui.",
+			"shoptype" : "standard",
+			"location" : {
+				"x" : 600,
+				"y" : 300,
+				"text" : "Lorem ipsum Ullamco irure et ex nostrud ut labore nulla cupidatat irure." 
+			}
+		}
+
+	]
+}

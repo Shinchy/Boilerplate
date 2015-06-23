@@ -1,6 +1,14 @@
 // Mixins
 @import "_mixins.scss";
 
+<<<<<<< HEAD
+// Mobile / Full Site Sizes
+$mobileSize: 640px;
+$siteWidth: 974px;
+$siteMax: 1170px;
+
+=======
+>>>>>>> 5346240c8f625a342d584deb97a1db74c389e478
 
 /*
 	Universal Items All
@@ -29,7 +37,11 @@ header,nav,article,footer,section,aside,figure,figcaption{display:block}
 #creative h4 { @include FuturaFont(22px,700,#000,1px); line-height: 24px; margin: 0; }
 #creative h5 { @include FuturaFont(16px,400,#000,0.08em); line-height: 18px; margin: 0; }
 #creative p { @include FuturaFont(15px,400,#000, 0.04em); margin: 10px auto 0 auto; line-height: normal; }
+<<<<<<< HEAD
+
+=======
 #creative p.sub { font-size: 15px; font-style: italic; }
+>>>>>>> 5346240c8f625a342d584deb97a1db74c389e478
 
 #creative .mobile-inline { display: none; }
 #creative .mobile-inline-block { display: none; }
@@ -83,12 +95,30 @@ nav.mobile-menu { display: none; }
 #creative span.chevron-down { background: url("http://images.asos.com/htmlpages/2013_09_OWL/arrow_down.png") center center no-repeat; width: 18px; height: 100%; margin-right: 2px; text-indent: -999px; display: inline-block; overflow: hidden; vertical-align: text-bottom; }
 #creative span.chevron-up { background: url("http://images.asos.com/htmlpages/2013_09_OWL/arrow_up.png") center center no-repeat; width: 18px; height: 100%; margin-right: 2px; text-indent: -999px; display: inline-block; overflow: hidden; vertical-align: text-bottom; }
 
+<<<<<<< HEAD
+
+/* Buttons */
+#creative .block-btn {
+	padding: 8px 20px; border: 3px solid #000; background-color: #FFF; display: inline-block; margin: 20px auto 0 auto;
+	font-family: 'FuturaPT', Tahoma, sans-serif; font-size: 15px; line-height: 19px; color: #000; font-weight: 700; z-index: 1; letter-spacing: 1px; transition: all .5s;
+	.ir { display: inline-block; }
+	em {
+		margin: -10px 0 0; padding: 0; display: inline-block; font-size: 20px; font-style: normal; font-weight: 700;
+	}
+	&:hover, &.active { background-color: #000; color: #FFF; opacity: 1; }
+}
+
+
+
+
+=======
 /* Buttons */
 #creative .block-btn {
 	padding: 8px 20px; border: 3px solid #000; background-color: #FFF; display: inline-block; margin: 20px auto 0 auto;
 	font-family: 'FuturaPT', Tahoma, sans-serif; font-size: 15px; line-height: 19px; color: #000; font-weight: 700; z-index: 1; letter-spacing: 1px;
 	.ir { display: inline-block; }
 }
+>>>>>>> 5346240c8f625a342d584deb97a1db74c389e478
 #creative a.block-btn-grey {
 	padding: 10px 20px; border: 3px solid #FFF; background-color: #e8dacf; display: inline-block; margin: 20px auto 0 auto;
 	font-family: 'FuturaPT', Tahoma, sans-serif; font-size: 15px; line-height: 21px; color: #000; font-weight: 700; text-transform: uppercase; z-index: 1; letter-spacing: 0.04em;
@@ -225,9 +255,13 @@ section .padded-outline-block { background-color: #FFF; border: 1px solid #000; 
 
 
 		/* Buttons */
+<<<<<<< HEAD
+		
+=======
 		.lrg-white-block { width: 90%; display: inline-block; background-color: #FFF; padding: 10px 0; border: 3px solid $blue; @include FuturaFont(22px,700,$blue,1px); margin: 5px 10px; 
 		&.active { background-color: $blue; color: #FFF; }
 		}
+>>>>>>> 5346240c8f625a342d584deb97a1db74c389e478
 
 		div.social-btns { display: none; }
 
