@@ -1,31 +1,21 @@
-<<<<<<< HEAD
-#ASOS Boilerplate v 1.0
-
-	Framework Used for ASOS Applications
-
-## Dependancies
-
-	The project makes use of Gulp.js to compile all the scripts and sass, to get 
-	project running simply use: gulp watch
-=======
-# My Boilerplate
-
-	Framework Used for My Basic Front End Applications. It's just a basic setup that I like to use.
-
-## Dependancies
-
-	The framework makes use of Gulp.js to compile all the scripts and sass
-
->>>>>>> 5346240c8f625a342d584deb97a1db74c389e478
-
-
 ## Setup guide:
 
-	get git repository from the following location
-	--
-<<<<<<< HEAD
+	get git repository from the following location:
 
-	All build work is done within the App folder, which in turn will output to the client folder.
+	https://github.com/Shinchy/Boilerplate.git
+	--
+
+	All build work is done within the App folder, which in turn will output to the Client folder.
+	If you want to replace this folder with a 'Host' folder 
+
+## Gulp
+
+	gulpfile.js - This is the project runner
+
+		gulp watch - this will load the server using Browser Sync
+
+		gulp images - this will minify all the images (there is no watch on the images to prevent junk)
+
 
 ## Notes
 
@@ -38,12 +28,11 @@
 
 	All the data for each location is stored in the folder : app/views/data/
 
-		This is where the image folder, name, copy and text is all stored. Update this to update the content
-		loaded into the build.
+		This is where the data files live, can be loaded in if you want to render out HTML pages using
+		JSON data.
+
+	This is where the image folder, name, copy and text is all stored. Update this to update the content
+	loaded into the build.
 
 	
 =======
-	https://github.com/Shinchy/Boilerplate.git
-
-	All build work is done within the App folder, which in turn will output to the host folder.
->>>>>>> 5346240c8f625a342d584deb97a1db74c389e478
