@@ -2,51 +2,35 @@
 @import "_universal.scss";
 
 // directories
-<<<<<<< HEAD
-$imageDirectory: "../2015_06_Hostelworld";
-=======
-$imageDirectory: "http://images.asos.com/htmlpages/2015_05_Revlon";
->>>>>>> 5346240c8f625a342d584deb97a1db74c389e478
+$imageDirectory: "../images";
 
-// Mobile / Full Site Sizes
+// Mobile / Full Site Sizes - This is a general rule based upon Bootstrap
 $mobileSize: 640px;
 $siteWidth: 974px;
 $siteMax: 1170px;
 
-// Colours used
-<<<<<<< HEAD
-$purple: #97a7d6;
-$orange: #ff7442;
-$pale: #e1effe;
-
-=======
-$mGreen: #73ccae;
-$mPink: #f5a1a0;
-$mYellow: #faf680;
-$mAqua: #89d8d9;
-$mBlue: #cdd1ea;
-$mOrange: #ff9c65;
-$palePink: #f4d1d4;
-$paleBlue: #76cbe3;
->>>>>>> 5346240c8f625a342d584deb97a1db74c389e478
+// Colours used can go in here...
+$blue: #74E6F0;
+$yellow: #FFE115;
+$red: #E00020;
+$green: #00C417;
 
 
 // ******************************
 //	Homepage 
 // ******************************
+ 
 // ******************************
 //	Site Wide Consistants 
 // ****************************** 
-// site wide articles
-#creative { }
-#responsive-header { top: 0; }
 
-#creative .mobile-inline-block { display: none; }
+// Site wide articles
+.responsive-header { top: 0; }
 
-#creative .table-cell-cont { width: 100%; height: 100%; display: table; }
-#creative .table-cell { display: table-cell; vertical-align: middle; }
-
-#creative p.sml { font-size: 16px; } 
+// Non Scrolling Background if you need it
+body.noscroll {
+	overflow: hidden; height: 100%; width: 100%;
+}
 
 
 
@@ -56,68 +40,38 @@ $paleBlue: #76cbe3;
 
 #creative {
 
-<<<<<<< HEAD
 	
-=======
-	.block-btn{
-		font-size: 13px;		
-		padding:6px 20px;
-		.ir{
-			background: url(#{$imageDirectory}/small_arrow_next_new.png) center center no-repeat;
-		}
-	}
->>>>>>> 5346240c8f625a342d584deb97a1db74c389e478
-	.matched-area{
-		// display: none;
-	}
+	.mobile-inline-block { display: none; }
+	
+	.table-cell-cont { width: 100%; height: 100%; display: table; }
+	.table-cell { display: table-cell; vertical-align: middle; }
 
+	// p
+	p.sml { font-size: 16px; } 
 
-
+	// Section
 	section { 
 		width: 100%; max-width: $siteWidth; margin: 20px auto 0; position: relative;
 		p { font-size: 16px; }
 		p.small { font-size: 11px; }
-<<<<<<< HEAD
+
 		// Aside Left
 		aside.left-50 { width: 50%; float: left; }	
 		aside.right-50 { width: 50%; float: right; }
+
 		a.block-btn.half-width { margin: 20px 0 10px 1%; width: 49.5%; &:first-child { margin: 20px 0 10px; } }
 		a.block-btn.full-width { width: 100%; }
-	}
 
-
-
-	// All of the competition elements	
-	section.comp-area {
-		margin: 0 auto 0;
-		div.dropdown-panel {
-			div.dropdown-title p.title { background-color: $orange; }
+		@media all and (max-width: $mobileSize) {
+			aside.left-50 { width: 100%; float: none; }	
+			aside.right-50 { width: 100%; float: none; }	
+			a.block-btn.half-width { width: 100%; margin: 10px auto 0; &:first-child { margin: 10px auto 0; } }	
 		}
 	}
-
-=======
+	// Top section 
+	header {
+		max-width: 100%; overflow: hidden; 
 	}
-	
->>>>>>> 5346240c8f625a342d584deb97a1db74c389e478
-	// Compeition Elements
-	section.comp-form { 
-		// main
-		width: 100%; max-width: 100%; height: 650px; margin: 60px auto 0; position: relative; border-top: 5px solid #f7f175;
-		
-		// inner
-		div.lightbox { position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,.3); z-index: 100; }
-		iframe { width: 100%; height: 100%; position: relative;  background-color: #FFF; } 
-		.close-form { cursor: pointer; }
-		.close-btn { position: absolute; left: 50%; top: 50%; background-color: #FFF; margin: -275px 0 0 448px; z-index: 1001; }
-
-		@media all and (max-width: $mobileSize) { 
-			margin: 0 auto; height: 100%; position: relative; 
-			iframe { 
-				border: 0; border-top: 3px solid #000; border-bottom: 3px solid #000; height: 1100px;
-			}
-		}
-	}
-
 	section.bottom-area { 
 		margin: 30px auto 30px;
 		@media all and (max-width: $mobileSize) {
@@ -140,94 +94,27 @@ $paleBlue: #76cbe3;
 		// & > * {  width: 24%; position: relative; display: table-cell; white-space: nowrap; }
 	}
 	
+
 	.noselect {
-	    -webkit-touch-callout: none;
-	    -webkit-user-select: none;
-	    -khtml-user-select: none;
-	    -moz-user-select: none;
-	    -ms-user-select: none;
-	    user-select: none;
+	    -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;
 	}
-
-	@media all and (max-width: $mobileSize) {
-		//
-	}
-
-	.astrix{
-		display: inline !important;
-		font-size: 10px;
-		vertical-align: top;
-	}
-
-}
-
-body.noscroll {
-	overflow: hidden; height: 100%; width: 100%;
-}
+	.astrix{ display: inline !important; font-size: 10px; vertical-align: top; }
 
 
 
+	// ------------------------------------------------
+	// IMAGE REPLACEMENTS
+	// ------------------------------------------------
 
-// ------------------------------------------------
-// IMAGE REPLACEMENTS
-// ------------------------------------------------
-#creative {
-
-	// nav icons
-	// .home-icon { background-image: url(#{$imageDirectory}/home_icon.png); width: 20px; height: 16px; }
-	// .mobile-menu-icon { background-image: url(#{$imageDirectory}/header_sprite_white.png); background-position: 7px -102px; background-size: 26px; width: 40px; height: 40px; }
-
+	// nav icons for information and close
 	.icon-info { background-image: url(#{$imageDirectory}/default/info.png); width: 39px; height: 39px; }
 	.icon-close { background-image: url(#{$imageDirectory}/default/close_icon.png); width: 25px; height: 25px; }
 	.icon-close-circle { background-image: url(#{$imageDirectory}/default/close_circle.png); width: 39px; height: 39px; }
 
-<<<<<<< HEAD
-
 	// en
 	// text
-	.txt-meettheworld { background-image: url(#{$imageDirectory}/txt/meettheworld.png); width: 339px; height: 137px; }
-	
-	// Title Banners
-	.txt-title-amsterdam { background-image: url(#{$imageDirectory}/locations/amsterdam/Amsterdam.png); width: 367px; height: 127px; }
-	.txt-title-berlin { background-image: url(#{$imageDirectory}/locations/berlin/Berlin.png); width: 367px; height: 127px; }
-	.txt-title-brussels { background-image: url(#{$imageDirectory}/locations/brussels/brussels.png); width: 367px; height: 127px; }
-	.txt-title-budapest { background-image: url(#{$imageDirectory}/locations/Budapest/budapest.png); width: 367px; height: 127px; }
-	.txt-title-dublin { background-image: url(#{$imageDirectory}/locations/Dublin/dublin.png); width: 367px; height: 127px; }
-	.txt-title-edinburgh { background-image: url(#{$imageDirectory}/locations/Edinburgh/edinburgh.png); width: 367px; height: 127px; }
-	.txt-title-london { background-image: url(#{$imageDirectory}/locations/London/london.png); width: 367px; height: 127px; }
-	.txt-title-paris { background-image: url(#{$imageDirectory}/locations/Paris/paris.png); width: 367px; height: 127px; }
-	.txt-title-venice { background-image: url(#{$imageDirectory}/locations/Venice/venice.png); width: 367px; height: 127px; }
-	[class*='txt-title-'] { background-size: 100% auto; background-position: center center; background-repeat: no-repeat; }
-	
-	// Tooltip Banners
-	.txt-tooltip-amsterdam { background-image: url(#{$imageDirectory}/locations/amsterdam/Amsterdam.png); width: 367px; height: 127px; }
-	.txt-tooltip-berlin { background-image: url(#{$imageDirectory}/locations/berlin/tooltip_title.png); width: 257px; height: 63px; }
-	.txt-tooltip-brussels { background-image: url(#{$imageDirectory}/locations/brussels/brussels.png); width: 367px; height: 127px; }
-	.txt-tooltip-budapest { background-image: url(#{$imageDirectory}/locations/Budapest/budapest.png); width: 367px; height: 127px; }
-	.txt-tooltip-dublin { background-image: url(#{$imageDirectory}/locations/Dublin/dublin.png); width: 367px; height: 127px; }
-	.txt-tooltip-edinburgh { background-image: url(#{$imageDirectory}/locations/Edinburgh/edinburgh.png); width: 367px; height: 127px; }
-	.txt-tooltip-london { background-image: url(#{$imageDirectory}/locations/London/london.png); width: 367px; height: 127px; }
-	.txt-tooltip-paris { background-image: url(#{$imageDirectory}/locations/Paris/paris.png); width: 367px; height: 127px; }
-	.txt-tooltip-venice { background-image: url(#{$imageDirectory}/locations/Venice/venice.png); width: 367px; height: 127px; }
-	[class*='txt-tooltip-'] { background-size: 100% auto; background-position: center center; background-repeat: no-repeat; }
-
-
-	// Logos
-	.logo-hostelworld-sml { background-image: url(#{$imageDirectory}/txt/hostelworld_sml.png); width: 175px; height: 20px; }
-	
-	.txt-whattopack { background-image: url(#{$imageDirectory}/txt/whattopack.png); width: 326px; height: 247px; }
-	.txt-wheretostay { background-image: url(#{$imageDirectory}/txt/wheretostay.png); width: 309px; height: 234px; }
-
-
-	// Icons
-	.map-dot { background-image: url(#{$imageDirectory}/icons/map.png); width: 26px; height: 32px; }
-	
-=======
-	
-	// en
-	// text
-		
->>>>>>> 5346240c8f625a342d584deb97a1db74c389e478
+	[class*='txt-'] { background-size: 100% auto; background-position: center center; background-repeat: no-repeat; }
+	[class*=' icon-'], [class^='icon-'] { background-size: 100% auto; background-position: center center; background-repeat: no-repeat; }
 
 	// Gallery Assets
 	.sml-prev-arrow { background-image: url(#{$imageDirectory}/default/small_arrow_prev.png); }
@@ -240,231 +127,7 @@ body.noscroll {
 	
 	// Mobile Versions
 	@media all and (max-width: $mobileSize) {
-		[class*="txt-"] { max-width: 95%; background-size: 100% auto; background-position: center center; background-repeat: no-repeat; margin-left: auto; margin-right: auto; }	
-	}
-<<<<<<< HEAD
-}
-=======
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Speed at which the tiles flip
-$flipTime: .16s;
-$fadeAfterTime: .18s;
-
-
-
-
-
-/* Skeleton for flip */
-#creative ul.flip {
-	position: relative; float: left; margin: 5px; width: 60px; height: 90px; font-size: 80px; font-weight: 400; line-height: 87px; border-radius: 6px; box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
-	
-	li { 
-		z-index: 1; position: absolute; left: 0; top: 0; width: 100%; height: 100%; list-style: none;
-		
-		&:first-child { z-index: 2; }
-		a { 
-			display: block; height: 100%; perspective: 200px; 
-			// inner divs
-			div { 
-				z-index: 1; position: absolute; left: 0; width: 100%; height: 50%; overflow: hidden;
-				.shadow { position: absolute; width: 100%; height: 100%; z-index: 2; }
-				&.up { 
-					transform-origin: 50% 100%; top: 0; 
-					&:after { content: ""; position:absolute; top:44px; left:0; z-index: 5; width: 100%; height: 3px; background-color: rgba(0,0,0,.4);	}
-					div.inn { top: 0; }
-				}
-				&.down { 
-					transform-origin: 50% 0%; bottom: 0; 
-					div.inn { bottom: 0; }
-				}
-				div.inn { position: absolute; left: 0; z-index: 1; width: 100%; height: 200%; color: #000; text-shadow: 0 1px 2px rgba(0,0,0,0.2); text-align: center; background-color: #FFF; border-radius: 6px; }
-
-			}
-		}
+		[class*="txt-"] { max-width: 95%; background-size: 100% auto; background-position: center center; background-repeat: no-repeat; margin-left: auto; margin-right: auto; }
 	}
 
-	@media all and (max-width: $mobileSize) { margin: 2px; }
 }
-
-/* PLAY */
-body.play #creative ul li.before { z-index: 3; 
-	.no-cssanimations & { display: none; }
-}
-body.play #creative ul li.active { 
-	-webkit-animation: asd $flipTime $flipTime linear both; z-index: 2; 
-	animation: asd $flipTime $flipTime linear both; z-index: 2;
-	@media all and (max-width: $mobileSize) {
-		-webkit-animation: asd 0 0 linear both; z-index: 2; 
-	}
-}
-@-webkit-keyframes asd {
-	0% { z-index: 2; }
-	5% { z-index: 4; }
-	100% { z-index: 4; }
-}
-@keyframes asd {
-	0% { z-index: 2; }
-	5% { z-index: 4; }
-	100% { z-index: 4; }
-}
-
-body.play #creative ul li.active .down {
-	z-index: 2;
-	-webkit-animation: turn $flipTime $flipTime linear both;
-	animation: turn $flipTime $flipTime linear both;
-	@media all and (max-width: $mobileSize) {
-		-webkit-animation: turn 0 0 linear both;
-	}
-}
-@-webkit-keyframes turn {
-	0% { transform: rotateX(90deg); }
-	100% { transform: rotateX(0deg); }
-}
-@keyframes turn {
-	0% { transform: rotateX(90deg); }
-	100% { transform: rotateX(0deg); }
-}
-
-body.play #creative ul li.before .up {
-	z-index: 2;
-	-webkit-animation: turn2 $flipTime linear both;
-	animation: turn2 $flipTime linear both;
-	@media all and (max-width: $mobileSize) {
-		-webkit-animation: turn2 0 linear both;
-	}
-}
-@-webkit-keyframes turn2 {
-	0% { transform: rotateX(0deg); }
-	100% { transform: rotateX(-90deg); }
-}
-@keyframes turn2 {
-	0% { transform: rotateX(0deg); }
-	100% { transform: rotateX(-90deg); }
-}
-
-
-/* SHADOW */
-body.play #creative ul li.before .up .shadow {
-	background: -moz-linear-gradient(top, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, 1) 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, .1)), color-stop(100%, rgba(0, 0, 0, 1)));
-	background: linear-gradient(top, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, 1) 100%);
-	background: -o-linear-gradient(top, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, 1) 100%);
-	background: -ms-linear-gradient(top, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, 1) 100%);
-	background: linear-gradient(to bottom, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, 1) 100%);
-	-webkit-animation: show $flipTime linear both;
-	animation: show $flipTime linear both;
-	@media all and (max-width: $mobileSize) {
-		-webkit-animation: show 0 linear both;
-	}
-}
-body.play #creative ul li.active .up .shadow {
-	background: -moz-linear-gradient(top, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, 1) 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, .1)), color-stop(100%, rgba(0, 0, 0, 1)));
-	background: linear-gradient(top, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, 1) 100%);
-	background: -o-linear-gradient(top, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, 1) 100%);
-	background: -ms-linear-gradient(top, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, 1) 100%);
-	background: linear-gradient(to bottom, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, 1) 100%);
-	-webkit-animation: hide $flipTime $fadeAfterTime linear both;
-	animation: hide $flipTime $fadeAfterTime linear both;
-	@media all and (max-width: $mobileSize) {
-		-webkit-animation: hide 0 0 linear both;
-	}
-}
-
-/*DOWN*/
-body.play #creative ul li.before .down .shadow {
-	background: -moz-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, .1) 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 1)), color-stop(100%, rgba(0, 0, 0, .1)));
-	background: linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, .1) 100%);
-	background: -o-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, .1) 100%);
-	background: -ms-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, .1) 100%);
-	background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, .1) 100%);
-	-webkit-animation: show $flipTime linear both;
-	animation: show $flipTime linear both;
-	@media all and (max-width: $mobileSize) {
-		-webkit-animation: show 0 linear both;
-	}
-}
-body.play #creative ul li.active .down .shadow {
-	background: -moz-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, .1) 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 1)), color-stop(100%, rgba(0, 0, 0, .1)));
-	background: linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, .1) 100%);
-	background: -o-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, .1) 100%);
-	background: -ms-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, .1) 100%);
-	background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, .1) 100%);
-	-webkit-animation: hide $flipTime $fadeAfterTime linear both;
-	animation: hide $flipTime $fadeAfterTime linear both;
-	@media all and (max-width: $mobileSize) {
-		-webkit-animation: hide 0 0 linear both;
-	}
-}
-// Webkit
-@-webkit-keyframes show {
-	0% { opacity: 0; }
-	100% { opacity: 1; }
-}
-@-webkit-keyframes hide {
-	0% { opacity: 1; }
-	100% { opacity: 0; }
-}
-// Non Webkit
-@keyframes show {
-	0% { opacity: 0; }
-	100% { opacity: 1; }
-}
-@keyframes hide {
-	0% { opacity: 1; }
-	100% { opacity: 0; }
-}
->>>>>>> 5346240c8f625a342d584deb97a1db74c389e478
