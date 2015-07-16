@@ -1,61 +1,19 @@
-doctype html
-//- Header and footer
-include includes/settings
-include includes/site_head.html
-include includes/ie_conditional.html
+//- SHINCHY Version 4.0
+//- Http Static, no real need for Node Baby, this is an App
+//- ...
+include settings/settings.jade
+include includes/header.html
 
-//- Common requirements and wigets
-include common/social
-
-
-//- Commonly used variables
-- var space 			= ' ';
-- var linkShop 			= '#';
-- var linkShopWomens 	= '#';
-- var linkShopMens 		= '#';
-
-
-
-//- site content
-div.commercial-main
- 
-	//-- ..Sections live in here
-	section.brand-content
-		//- Brand content etc.
-
-	section.comp-area
-		//- Drop down box
-		div.dropdown-panel
-			div.dropdown-title
-				p.title 
-					span.name ENTER TO WIN
-			div.dropdown-container
-				- var formID = '26';
-				include common/comp.jade
+//- Main Content for the whole site
+div#main.container
 	
-//- Consistant
-section.bottom-area
-	- createSocialButtonsNoContainer("#{ imageDirectory }/social.jpg");
-	br
-	a(href="#creative").scrollto.goto-link BACK TO TOP
-
-
-
-//- css
-link(rel='stylesheet', href='http://commercial.asos.com/assets/css/fullwidth.css')
-link(rel='stylesheet', href='http://commercial.asos.com/assets/css/Fonts.css')
-link(rel='stylesheet', href='#{cssDirectory}/hub.css')
+	//- CONTAIN LIVES HERE
 	
-//- js
-//- Assets
-script(type="text/javascript",src="http://connect.facebook.net/en_US/all.js")
-//- Main JS for the Hub
-script(type='text/javascript',src='#{jsDirectory}/hub.min.js')
+//- A simple preloader function
+div#loader
+	div.loader-container
+		div.shadow
+		div.box
 
-
-
-
-
-
-// end of main area
-include includes/site_footer.html
+//- footer
+include includes/footer.html

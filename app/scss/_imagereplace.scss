@@ -1,0 +1,16 @@
+/*******************************
+  File for all the image replacements 
+*******************************/
+
+#main {
+	
+	.txt-logo-shinchy { background-image: url(#{$imageDirectory}/logo.png); width: 570px; height: 97px; }
+
+
+	[class*='txt-logo'] { background-size: 100% auto; background-size: contain; background-repeat: no-repeat; background-position: center center; max-width: 95%; }
+
+	@media only screen and (max-width : $mobileWidth) {
+		[class*='txt-logo'] { width: 95%; }
+	}
+
+}

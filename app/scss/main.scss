@@ -1,0 +1,14 @@
+/*=====================================================================
+=            All Sass Files Come Together Right Now, Over Me            =
+=====================================================================*/
+
+$imageDirectory: "/img";
+
+$siteWidth: 1200px;
+$siteWidthContent: 900px;
+$mobileWidth: 640px;
+
+
+@import '_universal.scss';
+@import '_homepage.scss';
+@import '_imagereplace.scss';
